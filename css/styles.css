@@ -121,6 +121,7 @@ p {
   color: #757575;
   display: inline-flex;
   align-items: center;
+  fill: #757575;
 }
 
 .header a {
@@ -134,13 +135,19 @@ p {
 .contact-header:focus,
 .logo-link:focus {
   color: var(--main-color);
-  fill: var(--main-color);
 }
 
 .icon-envelope,
 .icon-smartphone {
   margin-right: 10px;
-  fill: #757575;
+}
+
+.contact-header:hover .icon-envelope {
+  fill: var(--main-color);
+}
+
+.contact-header:hover .icon-smartphone {
+  fill: var(--main-color)
 }
 
 /*-------END HEADER-----*/
@@ -326,7 +333,7 @@ p {
 }
 
 .clients-box:hover {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--main-color);
 }
 
 .box-link:hover,
@@ -336,6 +343,10 @@ p {
 
 .icon-clients {
   fill: #afb1b8;
+}
+
+.clients-box:hover .icon-clients {
+  fill: var(--main-color);
 }
 
 /*-----END OUR CLIENTS-----*/
@@ -508,15 +519,12 @@ p {
 .portfolio-signature {
   padding: 20px 24px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
-.portfolio-img {
-  background: var(--FFF);
-  border: 1px solid #eeeeee;
-}
-
-.portfolio-img:hover {
+.portfolio-signature:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
